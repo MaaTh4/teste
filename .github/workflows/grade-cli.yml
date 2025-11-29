@@ -12,8 +12,5 @@ jobs:
       - name: Checkout do código
         uses: actions/checkout@v4
 
-      - name: Permissão para o Gradle
-        run: chmod +x ./gradlew
-
       - name: Build com Maven
         run: mvn -B package --file pom.xml
